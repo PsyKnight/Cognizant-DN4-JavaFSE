@@ -22,12 +22,12 @@ public class WordDocument implements Document {
 
     @Override
     public String getOwner() {
-        return owner;
+        return this.owner;
     }
 
     @Override
     public double getSize() {
-        return size;
+        return this.size;
     }
 
 }
