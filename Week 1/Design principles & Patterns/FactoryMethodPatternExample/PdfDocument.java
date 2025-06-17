@@ -22,12 +22,12 @@ public class PdfDocument implements Document {
 
     @Override
     public String getOwner() {
-        return this.owner;
+        return owner;
     }
 
     @Override
     public double getSize() {
-        return this.size;
+        return size;
     }
 
 }

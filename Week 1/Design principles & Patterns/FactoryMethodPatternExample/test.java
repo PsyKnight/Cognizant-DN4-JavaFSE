@@ -1,25 +1,31 @@
+import javax.print.Doc;
+
 public class test {
     public static void main(String[] args) {
-        DocumentFactory df = new DocumentFactory();
-
-        Document doc1 = df.createDocument("DN4.0-Deepskilling-Handbook-Java-FSE.pdf", 844, "Cognizant");
-        System.out.println("Name: " + doc1.getName());
-        System.out.println("Extension: " + doc1.getExtension());
-        System.out.println("Owner: " + doc1.getOwner());
-        System.out.println("Size: " + doc1.getSize()+ "KB");
+        DocumentFactory wordDocumentFactory = new WordDocumentFactory();
+        Document wordDocument = wordDocumentFactory.createDocument("Design Patterns and Principles", 20, "Cognizant");
+        System.out.println("Name: " + wordDocument.getName());
+        System.out.println("Extension: " + wordDocument.getExtension() );
+        System.out.println("Owner: " + wordDocument.getOwner());
+        System.out.println("Size: " + wordDocument.getSize()+ "KB");
         System.out.println("\n");
 
-        Document doc2 = df.createDocument("DN 4.0 - Java FSE Mandatory hands-on detail.xlsx", 20, "Cognizant");
-        System.out.println("Name: " + doc2.getName());
-        System.out.println("Extension: " + doc2.getExtension() );
-        System.out.println("Owner: " + doc2.getOwner());
-        System.out.println("Size: " + doc2.getSize()+ "KB");
+        DocumentFactory pdfDocumentFactory = new PdfDocumentFactory();
+        Document pdfDocument = pdfDocumentFactory.createDocument("DN4.0-Deepskilling-Handbook-Java-FSE", 844, "Cognizant");
+        System.out.println("Name: " + pdfDocument.getName());
+        System.out.println("Extension: " + pdfDocument.getExtension());
+        System.out.println("Owner: " + pdfDocument.getOwner());
+        System.out.println("Size: " + pdfDocument.getSize()+ "KB");
         System.out.println("\n");
 
-        Document doc3 = df.createDocument("Design Patterns and Principles.docx", 20, "Cognizant");
-        System.out.println("Name: " + doc3.getName());
-        System.out.println("Extension: " + doc3.getExtension() );
-        System.out.println("Owner: " + doc3.getOwner());
-        System.out.println("Size: " + doc3.getSize()+ "KB");
+        DocumentFactory excelDocumentFactory = new ExcelDocumentFactory();
+        Document excelDocument = excelDocumentFactory.createDocument("DN 4.0 - Java FSE Mandatory hands-on detail", 20, "Cognizant");
+        System.out.println("Name: " + excelDocument.getName());
+        System.out.println("Extension: " + excelDocument.getExtension() );
+        System.out.println("Owner: " + excelDocument.getOwner());
+        System.out.println("Size: " + excelDocument.getSize()+ "KB");
+        System.out.println("\n");
+
+
     }
 }
