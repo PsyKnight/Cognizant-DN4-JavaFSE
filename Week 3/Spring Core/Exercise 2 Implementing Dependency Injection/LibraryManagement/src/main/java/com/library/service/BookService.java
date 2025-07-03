@@ -13,13 +13,6 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    public BookService() {
-    }
-
-    public void setBookRepository(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
-    }
-
     public String findBookId(int id) {
         return "Book id: " + bookRepository.getId(id);
     }
