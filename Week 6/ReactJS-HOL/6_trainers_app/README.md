@@ -1,4 +1,7 @@
-![img.png](img.png)
+![img.png](output.png)
+![img_1.png](output1.png)
+![img_2.png](output2.png)
+![img_3.png](output3.png)
 ### Need and Benefits of React Router
 
 React itself is a library for building user interfaces and does not include a routing solution out of the box. In a Single Page Application (SPA), the entire app loads once, and subsequent "page" changes happen dynamically without a full server reload.
