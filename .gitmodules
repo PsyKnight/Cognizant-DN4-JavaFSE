@@ -7,3 +7,6 @@
 [submodule "Week 8/3_GitDemo"]
 	path = Week 8/3_GitDemo
 	url = https://github.com/PsyKnight/3_GitDemo
+[submodule "Week 8/4_GitDemo"]
+	path = Week 8/4_GitDemo
+	url = https://github.com/PsyKnight/4_GitDemo
